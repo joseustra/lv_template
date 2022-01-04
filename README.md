@@ -9,11 +9,15 @@ sources:
  - https://koenvangilst.nl/blog/adding-tailwind-to-phoenix
  - https://sergiotapia.com/phoenix-160-liveview-esbuild-tailwind-jit-alpinejs-a-brief-tutorial
 
+To rename the app you can use the following commands:
+
 ```bash
-nomino -kp "(lib|test)/my_money(.+|)" "{:1}/lv_template{:2}"
+nomino -kp "(lib|test)/lv_template(.+|)" "{:1}/my_app{:2}"
 fastmod --accept-all  'lv_template' 'my_app'
 fastmod  --accept-all  'LvTemplate' 'MyApp'
 ```
+
+nomino and fastmod is what I like to use, but any other tool you already know will work.
 
 To start your Phoenix server:
 
