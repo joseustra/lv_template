@@ -5,6 +5,10 @@ LiveView 0.17
 Alpine 3.x
 Tailwindcss 3.x
 
+sources:
+ - https://koenvangilst.nl/blog/adding-tailwind-to-phoenix
+ - https://sergiotapia.com/phoenix-160-liveview-esbuild-tailwind-jit-alpinejs-a-brief-tutorial
+
 ```bash
 nomino -kp "(lib|test)/my_money(.+|)" "{:1}/lv_template{:2}"
 fastmod --accept-all  'lv_template' 'my_app'
